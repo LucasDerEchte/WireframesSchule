@@ -1,0 +1,228 @@
+<html lang="de">
+<head>
+    <link href="../css/bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../font-awesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../font-awesome/css/brands.css" rel="stylesheet">
+    <link href="../font-awesome/css/solid.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar links -->
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-5 d-none d-sm-inline">Men&uuml;</span>
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link align-middle px-0">
+                            <i class="fa-solid fa-file-lines text-white"></i>
+                            <span class="ms-1 d-none d-sm-inline text-white">Ausbildungsnachweise</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="dropdown pb-4">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                        <span class="d-none d-sm-inline mx-1">Azubi1</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col py-3">
+
+            <!-- Tabellencontainer -->
+
+            <div class=" container">
+                <!-- Suche -->
+                <div class="container suchcontainer border border-5 border-secondary rounded" id="suchcontainer">
+                    <div class="row " id="suchelement-row">
+                        <div class="col-12 align-middle" id="suchelement-col">
+                            <input type="text" class="form-control" placeholder="Ausbildungsnachweis" aria-label="Ausbildungsnachweis">
+                        </div>
+                    </div>
+                    <div class="row" id="suchbutton-row">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary">Suche</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ende Suche -->
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8 plus-icon-div">
+
+                        <input type="image" src="../img/add.png" height="30px" width="auto"
+                               data-bs-toggle="tooltip" data-bs-placement="top" title="Ausbildungsnachweis erstellen">
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <table class="table table-striped table-hover rounded" >
+                            <thead>
+                            <tr>
+                                <th class="text-center text-white table-dark" scope="col" colspan="5">Ausbildungsnachweise</th>
+                            </tr>
+                            <tr>
+                                <th colspan="1">
+                                    Ausbildungsnachweis
+                                </th>
+                                <th colspan="1">
+                                    Status
+                                </th>
+                                <th colspan="3" class="text-center">
+                                    Aktionen
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th class="tabelleAusweis" scope="row">Ausbildungsnachweis 1</th>
+                                <td class="tabelleStatus text-danger" scope="row">unbearbeitet</td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-regular fa-bell fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="Benachrichtigung"></i>
+                                    </div>
+                                </td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-solid fa-pencil fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="Bearbeiten"></i>
+                                    </div>
+                                </td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-solid fa-paper-plane fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="An Auszubildenden zur&uuml;cksenden"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tabelleAusweis" scope="row">Ausbildungsnachweis 2</th>
+                                <td class="tabelleStatus text-warning" scope="row">bearbeitet</td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-regular fa-bell fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="Benachrichtigung"></i>
+                                    </div>
+                                </td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-solid fa-pencil fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="Bearbeiten"></i>
+                                    </div>
+                                </td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-solid fa-paper-plane fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="An Auszubildenden zur&uuml;cksenden"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tabelleAusweis" scope="row">Ausbildungsnachweis 3</th>
+                                <td class="tabelleStatus text-info" scope="row">signiert</td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-regular fa-bell fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="Benachrichtigung"></i>
+                                    </div>
+                                </td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-solid fa-pencil fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="Bearbeiten"></i>
+                                    </div>
+                                </td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-solid fa-paper-plane fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="An Auszubildenden zur&uuml;cksenden"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tabelleAusweis" scope="row">Ausbildungsnachweis 4</th>
+                                <td class="tabelleStatus text-primary" scope="row">abgeschickt</td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-regular fa-bell fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="Benachrichtigung"></i>
+                                    </div>
+                                </td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-solid fa-pencil fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="Bearbeiten"></i>
+                                    </div>
+                                </td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-solid fa-paper-plane fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="An Auszubildenden zur&uuml;cksenden"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="5" scope="row" class="text-center">...</th>
+                            </tr>
+                            <tr>
+                                <th class="tabelleAusweis" scope="row">Ausbildungsnachweis 20</th>
+                                <td class="tabelleStatus text-success" scope="row">fertig</td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-regular fa-bell fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="Benachrichtigung"></i>
+                                    </div>
+                                </td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-solid fa-pencil fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="Bearbeiten"></i>
+                                    </div>
+                                </td>
+                                <td class="tabelleIcons text-center align-middle">
+                                    <div>
+                                        <i class="fa-solid fa-paper-plane fa-xl cursor-pointer"
+                                           data-bs-toggle="tooltip" data-bs-placement="top"
+                                           title="An Auszubildenden zur&uuml;cksenden"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-2"></div>
+
+                </div>
+            </div>
+            <!-- Ende Tabellencontainer -->
+        </div>
+
+    </div>
+</div>
+<!-- Ende Navbar links -->
+</body>
+</html>
