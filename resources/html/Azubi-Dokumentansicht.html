@@ -43,46 +43,61 @@
 
             <div class="container" style="">
                 <!-- Azubi Daten -->
-                <!-- Name -->
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-3">
-                        <label>Name:</label>
+
+                <div class="container" id="Azubidaten">
+                    <div class="row" id="azubidaten-row">
+                        <div class="col-2"></div>
+                        <div class="col-8 border border-5 border-secondary rounded pt-2">
+                            <!-- Name -->
+                            <div class="row">
+                                <div class="col">
+                                    <label>Name:</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="text" style="width: 100%;">
+                                </div>
+                            </div>
+                            <!-- Ausbildungsjahr -->
+                            <div class="row">
+                                <div class="col">
+                                    <label>Ausbildungsjahr:</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="text" style="width: 100%;">
+                                </div>
+                            </div>
+                            <!-- Abteilung -->
+                            <div class="row">
+                                <div class="col">
+                                    <label>Abteilung:</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="text" style="width: 100%;">
+                                </div>
+                            </div>
+                            <!-- Ausbildungswoche -->
+                            <div class="row pb-2">
+                                <div class="col">
+                                    <label>Ausbildungswoche:</label>
+                                </div>
+                                <div class="col-8">
+                                    <input type="text" style="width: 100%;">
+                                </div>
+                            </div>
+
+                            <div class="row" id="suchbutton-row">
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary">Vorlagen</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-5">
-                        <input type="text" style="width: 100%;">
-                    </div>
+
                 </div>
-                <!-- Ausbildungsjahr -->
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-3">
-                        <label>Ausbildungsjahr:</label>
-                    </div>
-                    <div class="col-5">
-                        <input type="text" style="width: 100%;">
-                    </div>
+                <!-- Ende Azubidaten -->
+                <div id="nichtAzubi-plus-rowheight" class="row">
                 </div>
-                <!-- Abteilung -->
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-3">
-                        <label>Abteilung:</label>
-                    </div>
-                    <div class="col-5">
-                        <input type="text" style="width: 100%;">
-                    </div>
-                </div>
-                <!-- Ausbildungswoche -->
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-3">
-                        <label>Ausbildungswoche:</label>
-                    </div>
-                    <div class="col-5">
-                        <input type="text" style="width: 100%;">
-                    </div>
-                </div>
+
                 <!-- Taetigkeiten -->
                 <div class="row">
                     <div class="col-2"></div>
@@ -105,31 +120,37 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td colspan="1" class="tabelleAusweis">Tätigkeit 1</td>
-                                <td colspan="4" class="tabelleAusweis"><input type="text" style="width: 100%;"></td>
+                                <td class="col">Tätigkeit 1</td>
+                                <td class="col-8"><input type="text" value="Programmieren" style="width: 100%;"></td>
                             </tr>
                             <tr>
-                                <td colspan="1" class="tabelleAusweis">Tätigkeit 2</td>
-                                <td colspan="4" class="tabelleAusweis"><input type="text" style="width: 100%;"></td>
+                                <td class="col">Tätigkeit 2</td>
+                                <td class="col-8"><input type="text" value="Loch in die Luft starren" style="width: 100%;"></td>
                             </tr>
                             <tr>
-                                <td colspan="1" class="tabelleAusweis">Tätigkeit 3</td>
-                                <td colspan="4" class="tabelleAusweis"><input type="text" style="width: 100%;"></td></tr>
+                                <td class="col">Tätigkeit 3</td>
+                                <td colspan="4"><input type="text" value="..." style="width: 100%;"></td></tr>
                             <tr>
-                                <td colspan="1" class="tabelleAusweis">Tätigkeit 4</td>
-                                <td colspan="4" class="tabelleAusweis"><input type="text" style="width: 100%;"></td></tr>
+                                <td class="col">Tätigkeit 4</td>
+                                <td class="col-8"><input type="text" style="width: 100%;"></td></tr>
                             <tr>
                                 <th colspan="5" scope="row" class="text-center">...</th>
                             </tr>
                             <tr>
-                                <td colspan="1" class="tabelleAusweis">Tätigkeit 20</td>
-                                <td colspan="4" class="tabelleAusweis"><input type="text" style="width: 100%;"></td></tr>
+                                <td class="col">Tätigkeit 20</td>
+                                <td class="col-8"><input type="text" style="width: 100%;"></td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="col-2"></div>
-
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <button type="button" class="btn btn-primary">Signieren</button>
+                            <button type="button" class="btn btn-primary">Speichern</button>
+                            <button type="button" class="btn btn-primary">Abbrechen</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Ende Tabellencontainer -->
