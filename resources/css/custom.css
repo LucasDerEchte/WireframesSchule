@@ -1,3 +1,40 @@
+#lhframe{
+    height: 300px;
+    width: 400px;
+}
+#header-row{
+    height: 50px;
+    width: 400px;
+}
+#login-heading{
+    color: #5099da;
+}
+#login-gaprow{
+    height: 20px;
+}
+#loginrow-oben{
+    height: 50px;
+}#loginrow-unten{
+    height: 30px;
+}
+.loginframe{
+    height: 250px;
+    width: 400px;
+}
+.loginrow{
+    height: 50px;
+}
+.logininput{
+    width: 100%;
+}
+.login-center{
+    top: 50%;
+    margin: 0;
+    position: fixed;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 .center {
     top: 50%;
     margin: 0;

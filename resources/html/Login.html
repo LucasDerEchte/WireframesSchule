@@ -1,98 +1,49 @@
 <html>
-<style>
-    .container {
-        position: relative;
-        height: 500px;
-    }
+<head>
+    <link href="../css/bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../font-awesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../font-awesome/css/brands.css" rel="stylesheet">
+    <link href="../font-awesome/css/solid.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+    <body>
+        <div class="center" id="lhframe">
+            <div class="row" id="header-row">
+                <div class="col-12">
+                    <h2 class="text-center" id="login-heading">Berichtsheftverwaltung</h2>
+                </div>
+            </div>
+            <div class="row text-center loginframe rounded border border-5 border-secondary bg-light">
+                <div class="col-12">
+                    <div class="row" id="loginrow-oben"></div>
+                    <div class="row loginrow">
+                        <div class="col-2"></div>
+                        <div class="col-8 my-auto">
+                            <input type="text" class="form-control logininput" placeholder="Benutzername"
+                                   aria-label="Benutzername">
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                    <div class="row loginrow">
+                        <div class="col-2"></div>
+                        <div class="col-8 my-auto">
+                            <input type="password" class="form-control logininput" placeholder="Passwort"
+                                   aria-label="Passwort">
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                    <div id="login-gaprow"></div>
+                    <div class="row loginrow">
+                        <div class="col-4"></div>
+                        <div class="col-4 my-auto text-center">
+                            <button class="btn btn-primary">Login</button>
+                        </div>
+                        <div class="col-4"></div>
 
-    .center {
-        margin: 0;
-        position: absolute;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-
-    .center.picture {
-        position: relative;
-        top: -100px;
-        z-index: 20;
-    }
-
-    .center.login {
-        top: 250px;
-        color: rgb(255, 255, 255);
-        font-size: 16px;
-        line-height: 16px;
-        padding: 5px;
-        border-radius: 5px;
-        font-family: Georgia, serif;
-        font-weight: normal;
-        text-decoration: none;
-        font-style: normal;
-        font-variant: normal;
-        text-transform: none;
-        text-align: center;
-        background: rgb(28, 110, 164);
-        border: 2px solid rgb(28, 110, 164);
-    }
-
-    .login:hover {
-        background: #1C6EA4;
-        cursor: pointer;
-    }
-
-    .login:active {
-        background: #144E75;
-    }
-
-    .login::selection {
-        background-color: transparent;
-    }
-
-    .center.username {
-        top: 130px;
-        font-family: Georgia, serif;
-    }
-
-    .center.username-text {
-        top: 150px;
-        height: fit-content;
-        border: 1px solid black;
-        font-family: Georgia, serif;
-        border-radius: 5px;
-    }
-
-    .center.password {
-        top: 180px;
-        font-family: Georgia, serif;
-    }
-
-    .center.password-text {
-        top: 200px;
-        height: fit-content;
-        border: 1px solid black;
-        font-family: Georgia, serif;
-        border-radius: 5px;
-    }
-</style>
-<body>
-<div class="container">
-    <div>
-        <button class="center login">Login</button>
-    </div>
-    <div>
-        <p class="center username">Benutzername</p>
-    </div>
-    <div>
-        <input type="text" class="center username-text"></input>
-    </div>
-    <div>
-        <p class="center password">Passwort</p>
-    </div>
-    <div>
-        <input type="text" class="center password-text"></input>
-    </div>
-</div>
-</body>
+                        <div class="row" id="loginrow-unten"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
