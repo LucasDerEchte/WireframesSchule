@@ -20,6 +20,7 @@
 .loginframe{
     height: 250px;
     width: 400px;
+    border-radius: 1rem;
 }
 .loginrow{
     height: 50px;
