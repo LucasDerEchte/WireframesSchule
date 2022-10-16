@@ -1,3 +1,13 @@
+.btn-purple{
+    background: #c200c2;
+    border-color: #c200c2;
+    color: white;
+}
+.btn-lime{
+    background: #15cb15;
+    border-color: #15cb15;
+    color: white;
+}
 #lhframe{
     height: 300px;
     width: 400px;

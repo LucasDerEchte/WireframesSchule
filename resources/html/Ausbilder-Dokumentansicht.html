@@ -141,7 +141,7 @@
                   <label>Name:</label>
                 </div>
                 <div class="col-8">
-                  <input type="text" readonly style="width: 100%;">
+                  <input disabled type="text" value="Name X" style="width: 100%;">
                 </div>
               </div>
               <!-- Ausbildungsjahr -->
@@ -150,7 +150,7 @@
                   <label>Ausbildungsjahr:</label>
                 </div>
                 <div class="col-8">
-                  <input type="text" readonly style="width: 100%;">
+                  <input disabled type="text" value="Ausbdildungsjahr X" style="width: 100%;">
                 </div>
               </div>
               <!-- Abteilung -->
@@ -159,7 +159,7 @@
                   <label>Abteilung:</label>
                 </div>
                 <div class="col-8">
-                  <input type="text" readonly style="width: 100%;">
+                  <input disabled type="text" value="Abteilung X" style="width: 100%;">
                 </div>
               </div>
               <!-- Ausbildungswoche -->
@@ -168,7 +168,7 @@
                   <label>Ausbildungswoche:</label>
                 </div>
                 <div class="col-8">
-                  <input type="text" readonly style="width: 100%;">
+                  <input disabled type="text" value="Ausbildungswoche X" style="width: 100%;">
                 </div>
               </div>
             </div>
@@ -200,24 +200,26 @@
               <tbody>
               <tr>
                 <td class="col">Tätigkeit 1</td>
-                <td class="col-8"><input type="text" value="Programmieren" readonly style="width: 100%;"></td>
+                <td colspan="4">
+                  <div class="form-group">
+                                        <textarea placeholder="Beschreibung" class="form-control"
+                                                  rows="3" disabled> Beschreibung...
+                                        </textarea>
+                  </div>
+                </td>
               </tr>
-              <tr>
-                <td class="col">Tätigkeit 2</td>
-                <td class="col-8"><input type="text" value="Loch in die Luft starren" readonly style="width: 100%;"></td>
-              </tr>
-              <tr>
-                <td class="col">Tätigkeit 3</td>
-                <td colspan="4"><input type="text" value="..." readonly style="width: 100%;"></td></tr>
-              <tr>
-                <td class="col">Tätigkeit 4</td>
-                <td class="col-8"><input type="text" readonly style="width: 100%;"></td></tr>
               <tr>
                 <th colspan="5" scope="row" class="text-center">...</th>
               </tr>
               <tr>
-                <td class="col">Tätigkeit 20</td>
-                <td class="col-8"><input type="text" readonly style="width: 100%;"></td>
+                <td class="col">Tätigkeit 10</td>
+                <td colspan="4">
+                  <div class="form-group">
+                                        <textarea placeholder="Beschreibung" class="form-control"
+                                                  rows="3" disabled> Beschreibung...
+                                        </textarea>
+                  </div>
+                </td>
               </tr>
               </tbody>
             </table>
@@ -228,15 +230,15 @@
         <div class="row">
           <div class="col-2"></div>
           <div class="col-8 pb-3">
-            <textarea rows="4" style="width:100%;resize: none;" placeholder="Kommentar"></textarea>
+            <textarea rows="3" style="width:100%;resize: none;" placeholder="Kommentar"></textarea>
           </div>
         </div>
         <div class="row">
           <div class="col-2"></div>
           <div class="col-8">
-            <button type="button" class="btn btn-primary">Signieren</button>
-            <button type="button" class="btn btn-primary">Speichern</button>
-            <button type="button" class="btn btn-primary">Abbrechen</button>
+            <button type="button" class="btn btn-purple">Signieren</button>
+            <button type="button" class="btn btn-lime">Zurückschicken</button>
+            <button type="button" class="btn btn-danger">Abbrechen</button>
           </div>
         </div>
       </div>
